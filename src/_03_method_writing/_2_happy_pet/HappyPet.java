@@ -15,8 +15,11 @@ public class HappyPet {
 			//    (eg: cuddle, food, water, take a walk, groom, clean up poop).
 			//    Make sure to customize the title and question too.
 			int task = JOptionPane.showOptionDialog(null, "Which pet do you want?", "Choose your pet!", 0, JOptionPane.INFORMATION_MESSAGE, null,
-					new String[] { "Button1", "Button2", "Button3" }, null);
-
+					new String[] { "Dog", "Cat", "Fish" }, null);
+			int x = 0;
+			while(x < 4) {
+				
+			}
 			// 6. Use user input to call the appropriate method created in step 5 below.
 
 			// 7. If you determine the happiness level is large enough, tell the
