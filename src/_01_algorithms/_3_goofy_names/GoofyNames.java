@@ -9,32 +9,39 @@ import javax.swing.JOptionPane;
 public class GoofyNames {
 	public static void main(String[] args) {
 		String goofyName = "";
-
+		int i = 0;
 		// 1. Ask the user to enter their name
 			String name = JOptionPane.showInputDialog(null, "Enter your name:");
 		// 2. Print upper case name to the console using .toUpperCase()
-			System.out.println(name.toUpperCase());
 		//    Run your program to see that this works.
 
 		// 3. Loop through each character of the name (steps 4 - 7).
 		//    HINT: Use .length() to determine the number of characters in the String.
-
+			while(i < name.length()) {
 				// 4. Create a char variable to store the next character of the name
 				//    use .charAt()
-	
+				char character = name.charAt(i);
 				
 				// 5. Use MODULO operator (%) to identify if it is an EVEN or ODD character.
-			
+				if (i % 2 == 0) {
+					character = Character.toUpperCase(character);
+					
+				}
+				else {
+					character = Character.toLowerCase(character);
+				}
+				
 			
 				// 6. Even characters should be made uppercase and odd characters made lowercase
 				//    HINT: use Character.toUpperCase() or Character.toLowerCase()
 	
 			
-				// 7. ADD the char to the end of the goofyName String
-
-		
+				// 7. ADD the char to the end of the goofyName Strin
+				goofyName += character;
+				i++;
+			}
 		// 8. Use pop-up to show user their Goofy name
-
+			JOptionPane.showMessageDialog(null, goofyName);
 	}
 }
 
