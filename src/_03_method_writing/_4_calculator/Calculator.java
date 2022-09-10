@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 public class Calculator {
 
 	//GOAL: MAKE A CALCULATOR
+	int answer = 0;
 	public static void main(String[] args) {
 		String input1 = JOptionPane.showInputDialog("Enter a number");
 		String input2 = JOptionPane.showInputDialog("Enter another number");
@@ -21,6 +22,10 @@ public class Calculator {
 	// 1) Make 4 static methods (add, subtract, multiply, divide)
 	//		They should each take 2 numbers as parameters
 	//		and return the answer.
+	private static void add(int num1, int num2) {
+		num1 = num1 + num2;
+		return num1;
+	}
 	 
 	
 	// 2) Make a static method called " result" that takes a number
