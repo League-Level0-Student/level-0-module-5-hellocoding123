@@ -66,25 +66,18 @@ void skill3() { // Get a random number that is less than 20 and print it to the 
 
 void skill4() { // In a pop-up, ask the user for the city they live in
 
-
+String answer = JOptionPane.showInputDialog(null, "What city do you live in?");
 
 // If they answered "San Diego", tell them they live in America's Finest City
-
+if (answer == "san diego") {
+	JOptionPane.showMessageDialog(null, "You live in America's Finest City."); 
+}
 
 
 // Otherwise, tell them to move to San Diego
-
-
-
-// Create a variable - cars - and initialize it to the number of cars your family has. // If there are 0 cars, use a pop-up to display, "I bet you use public transportation."
-
-
-
-// If there is 1 car, use a pop-up to display the make/model of the car
-
-
-
-// If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them.
+else {
+	JOptionPane.showMessageDialog(null, "Move to San Diego."); 
+}
 
 
 
@@ -92,11 +85,12 @@ void skill4() { // In a pop-up, ask the user for the city they live in
 
 void skill5() { // In a pop-up, ask the user for the name of their school
 
+String answer = JOptionPane.showInputDialog(null, "What is the name if your school?");
 
 
 // In another pop-up, tell the user, that their school is a fantastic school. // You must include the name of the school in the message.
 
-
+JOptionPane.showMessageDialog(null, answer + " is a fantastic school!");
 
 }
 }
